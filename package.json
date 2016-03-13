@@ -1,6 +1,6 @@
 {
   "name": "react-throb",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A React component for a throbbing loader",
   "main": "index.js",
   "scripts": {
@@ -18,6 +18,9 @@
   ],
   "author": "Andrei Picus",
   "license": "MIT",
+  "peerDependencies": {
+    "react": "^0.14.7"
+  },
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.7.2",
