@@ -6,38 +6,38 @@
 @height-end: 100px;
 
 .throb {
-  position: relative;
   height: @height-end;
+  display: flex;
+  align-items: center;
 
   .bar {
-    position: absolute;
-    vertical-align: middle;
     width: @width;
     height: max(@height-start, @height-end);
     background-color: lightblue;
-    float: left;
 
     animation: throb @duration linear infinite;
     animation-direction: alternate;
 
+    margin-right: @gap;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
     &:nth-child(1) {
       animation-delay: @delay * 0;
-      left: (@width + @gap) * 0;
     }
 
     &:nth-child(2) {
       animation-delay: @delay * 1;
-      left: (@width + @gap) * 1;
     }
 
     &:nth-child(3) {
       animation-delay: @delay * 2;
-      left: (@width + @gap) * 2;
     }
 
     &:nth-child(4) {
       animation-delay: @delay * 3;
-      left: (@width + @gap) * 3;
     }
   }
 }
@@ -45,11 +45,9 @@
 
 @keyframes throb {
   0%, 50% {
-    top: (@height-end - @height-start) / 2;
     height: @height-start;
   }
   50%, 100% {
-    top: 0;
     height: @height-end;
   }
 }
