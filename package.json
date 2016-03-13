@@ -1,0 +1,41 @@
+{
+  "name": "react-throb",
+  "version": "1.0.0",
+  "description": "A React component for a throbbing loader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "lint-files": "eslint --ext js --ext jsx",
+    "lint": "npm run lint-files -- ."
+  },
+  "keywords": [
+    "react",
+    "component",
+    "loader",
+    "animation",
+    "throb"
+  ],
+  "author": "Andrei Picus",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.7.2",
+    "babel-eslint": "^5.0.0",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-class-properties": "^6.6.0",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.4.0",
+    "eslint-config-airbnb": "^6.1.0",
+    "eslint-plugin-react": "^4.2.1",
+    "estraverse-fb": "^1.3.1",
+    "less": "^2.6.1",
+    "less-loader": "^2.2.2",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.14"
+  }
+}
